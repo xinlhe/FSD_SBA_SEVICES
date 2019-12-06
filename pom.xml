@@ -91,7 +91,7 @@
     <module>SBA_MicroService_CompanyClient</module>
     <module>SBA_MicroService_UploadClient</module>
     <module>SBA_MicroService_Tester</module>
-    <module>SBA_MicroService_Exchangelient</module>
+    <module>SBA_MicroService_ExchangeClient</module>
     <module>SBA_MicroService_ZuulService</module>
   </modules>
 </project>

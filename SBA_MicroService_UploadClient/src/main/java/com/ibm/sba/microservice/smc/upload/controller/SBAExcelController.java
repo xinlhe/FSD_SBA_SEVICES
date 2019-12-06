@@ -22,15 +22,15 @@ public class SBAExcelController {
 
 	@RequestMapping(value = "/excel", method = RequestMethod.POST)
 	@ResponseBody
-	public Map<String, String> importResult(@RequestParam("file") MultipartFile file) throws Exception {
+	public Map<String, SBAResultBean> importResult(@RequestParam("file") MultipartFile file) throws Exception {
 
-	    Map<String, String> map = new HashMap<String, String>();
+	    Map<String, SBAResultBean> map = new HashMap<String, SBAResultBean>();
 	    
 		String fileName = file.getOriginalFilename();
 		
-		excelService.batchImport(fileName, file);
+		SBAResultBean rb = excelService.batchImport(fileName, file);
 		
-		map.put("retMsg", "Upload file Successful !!!");
+		map.put("rb", rb);
 		
 		return map;
 	}

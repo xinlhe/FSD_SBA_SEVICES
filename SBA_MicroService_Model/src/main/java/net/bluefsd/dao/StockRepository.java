@@ -24,8 +24,8 @@ public interface StockRepository extends JpaRepository<Stock, String> {
 	@Query(value = "SELECT s FROM Stock s where companyCd=:companyCd and exchCd=:exchCd")
 	public List<Stock> findByCompanyExch(@Param("companyCd") String companyCd, @Param("exchCd") String exchCd);
 
-//	@Transactional(readOnly = true)
-//	@Query(value = "SELECT s FROM Stock s where stockCd=:stockCd")
-//	public  Stock  findByStockCd(@Param("stockCd") String stockCd);
+	@Transactional(readOnly = true)
+	@Query(value = "SELECT s FROM Stock s where stockCd=:stockCd")
+	public  Stock  findByStockCd(@Param("stockCd") String stockCd);
 
 }

@@ -76,6 +76,17 @@ public class SBAExcelService {
 			String time = row.getCell(4).getStringCellValue();
 
 			String strDate = dateFormat.format(date);
+			
+			if(r == 1) {
+			    
+			    rb.setFromDate(strDate.toString());
+			}
+			if(r == sheet.getLastRowNum()) {
+			    
+			    rb.setToDate(strDate.toString());
+			}
+			rb.setStockCode(stockCd);
+			
 			// 2019/6/8 10:30:00
 			String dateTime = strDate.trim() + " " + time.trim();
 			// System.out.println(r + ":" + dateTime);
@@ -95,7 +106,8 @@ public class SBAExcelService {
 
 			stockPriceRepository.save(stockPrice);
 		}
-
+		
+		rb.setNumber(sheet.getLastRowNum());
 		rb.setMsg("import successfully. Total rows " + sheet.getLastRowNum() + "; failed rows " + list.size());
 		rb.setCode(1);
 		return rb;

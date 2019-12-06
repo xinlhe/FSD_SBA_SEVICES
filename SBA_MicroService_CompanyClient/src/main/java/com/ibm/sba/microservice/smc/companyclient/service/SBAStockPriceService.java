@@ -239,7 +239,7 @@ public class SBAStockPriceService {
 
 	public Map<String, List<Object>> findStockSectorPrice(String stockCd, String from, String to)
 			throws ParseException {
-		Stock stock = stockRepository.findById(stockCd).get();
+		Stock stock = stockRepository.findByStockCd(stockCd);
 		String sectorCd = stock.getSectorCd();
 		
 		Date oFrom = dateFormat.parse(from);
