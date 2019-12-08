@@ -93,5 +93,6 @@
     <module>SBA_MicroService_Tester</module>
     <module>SBA_MicroService_ExchangeClient</module>
     <module>SBA_MicroService_ZuulService</module>
+    <module>SBA_MicroService_Ribbon</module>
   </modules>
 </project>

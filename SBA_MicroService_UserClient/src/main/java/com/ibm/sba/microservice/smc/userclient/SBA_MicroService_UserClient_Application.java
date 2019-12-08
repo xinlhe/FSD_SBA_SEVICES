@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Import;
  */
 // @RestController
 @SpringBootApplication
-@EnableHystrix
 @EnableEurekaClient  
 @Import({SBA_MicroService_UserClient_Config.class })
 public class SBA_MicroService_UserClient_Application {

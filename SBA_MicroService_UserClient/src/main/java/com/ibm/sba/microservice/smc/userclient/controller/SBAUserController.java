@@ -2,12 +2,9 @@ package com.ibm.sba.microservice.smc.userclient.controller;
 
 import java.util.HashMap;
 import java.util.Map;
-import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,7 +13,6 @@ import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.ibm.sba.microservice.smc.userclient.service.SBAUserService;
 import com.ibm.sba.microservice.smc.userclient.util.SBAMailsUtil;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import net.bluefsd.comm.controller.BaseController;
 import net.bluefsd.entity.SBAUserEntity;
 
@@ -212,26 +208,5 @@ public class SBAUserController extends BaseController {
         return true;
         
     }
-    
-    /**
-     * if SBA_MicroService_UserClient service is down, will feedback "User Service System is busy now, Please wait for a moment!"
-     * @param userEntity
-     * @return
-     * @throws AuthenticationException
-     */
-    @HystrixCommand(fallbackMethod="usersRibbonLoginBack")
-    @RequestMapping(value = "/usersRibbonLogin", method = RequestMethod.POST)
-    public Map usersRibbonLogin(SBAUserEntity userEntity) throws AuthenticationException {
-        
-        Map<?, ?> map = (Map<?, ?>) restTemplate.postForObject("http://SBA_MicroService_UserClient/login", userEntity, SBAUserEntity.class);
-        
-        return map;
-    }
-    
-    public String usersRibbonLoginBack() {
-        
-        return "User Service System is busy now, Please wait for a moment!";
-    }
-
     
 }
