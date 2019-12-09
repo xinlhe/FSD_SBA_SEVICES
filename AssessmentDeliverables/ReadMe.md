@@ -67,6 +67,10 @@ topic : Stock Market Charting(FSD)v3.0
 
 6. Jmeter’s JMX file to test atleast one REST End point, and Screenshot of report
 	
-	JMeter's JMX file url : 
+	JMeter's JMX file url : https://github.com/xinlhe/FSD_SBA_SERVICES/tree/master/AssessmentDeliverables/JMeter%20file
 	
-	JMeter's Screenshots url : 
+	JMeter's Screenshots url : https://github.com/xinlhe/FSD_SBA_SERVICES/tree/master/AssessmentDeliverables/DeleveryScreenShots/JMeter
+
+7. Dockerfile
+   
+   iiht_fsd_sba/backend/account/Dockerfile
