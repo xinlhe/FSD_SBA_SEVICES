@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1575870421919,31,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-1,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,31,0,1
+1575870422023,24,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-2,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,23,0,2
+1575870422120,9,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-3,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,9,0,1
+1575870422221,9,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-4,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,9,0,1
+1575870422322,10,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-5,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,9,0,0
+1575870422424,11,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-6,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,11,0,1
+1575870422525,15,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-7,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,15,0,1
+1575870422623,53,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-8,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,52,0,1
+1575870422718,13,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-9,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,12,0,2
+1575870422821,15,SBA_FindCompanyList_Webservice,200,,Microservice_company_client 1-10,text,true,,1455,222,1,1,http://127.0.0.1:8082/company/listcompany,15,0,2
