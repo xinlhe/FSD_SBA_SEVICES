@@ -73,4 +73,24 @@ topic : Stock Market Charting(FSD)v3.0
 
 7. Dockerfile
    
-   iiht_fsd_sba/backend/account/Dockerfile
+   FSD_SBA_SERVICES/FSD-FinalAssignment-MicroService-EurekaServer/Dockerfile
+   
+   FSD_SBA_SERVICES/SBA_MicroService_CompanyClient/Dockerfile
+   
+   FSD_SBA_SERVICES/SBA_MicroService_ExchangeClient/Dockerfile
+   
+   FSD_SBA_SERVICES/SBA_MicroService_UserClient/Dockerfile
+   
+   FSD_SBA_SERVICES/SBA_MicroService_ZuulService/Dockerfile
+   
+   FSD_SBA_SERVICES/SBA_MicroService_UploadClient/Dockerfile
+   
+8. Jenkinsfile or Jenkins UI ScreenShot
+	
+	git url : https://github.com/xinlhe/FSD_SBA_SERVICES/tree/master/AssessmentDeliverables/DeleveryScreenShots/Jenkins
+
+9. URL where the Project is deployed
+
+	MicroServices git url : https://github.com/xinlhe/FSD_SBA_SERVICES/
+	
+	Front End git url : https://github.com/xinlhe/FSD_SBA_UI
