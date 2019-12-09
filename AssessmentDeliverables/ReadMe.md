@@ -26,10 +26,10 @@ topic : Stock Market Charting(FSD)v3.0
 	    port : 8090
 		
 	2.6 name : SBA_MicroService_Ribbon
-		port : 8084
+		port : 8085
 	
 	2.7 name : SBA_MicroService_UploadClient
-		port : 8085
+		port : 8084
 	
 	2.8 name : SBA_MicroService_Tester
 	
@@ -43,7 +43,7 @@ topic : Stock Market Charting(FSD)v3.0
 	
 	mvn clean package
 
-	mvn dockerfile:build
+	mvn dockerfile:build -t
 
 	docker run -d --name=FSD-FinalAssignment-MicroService-EurekaServer -p 8761:8761 FSD-FinalAssignment-MicroService-EurekaServer:latest
 
@@ -55,9 +55,9 @@ topic : Stock Market Charting(FSD)v3.0
 	
 	docker run -d --name=SBA_MicroService_ZuulService --link registry -p 8090:8090 SBA_MicroService_ZuulService:latest
 	
-	docker run -d --name=SBA_MicroService_Ribbon --link registry -p 8084:8084 SBA_MicroService_Ribbon:latest
+	docker run -d --name=SBA_MicroService_Ribbon --link registry -p 8085:8085 SBA_MicroService_Ribbon:latest
 	
-	docker run -d --name=SBA_MicroService_UploadClient --link registry -p 8085:8085 SBA_MicroService_UploadClient:latest
+	docker run -d --name=SBA_MicroService_UploadClient --link registry -p 8084:8084 SBA_MicroService_UploadClient:latest
 
 5. Test code of Angular and Mid Tier need to be included
 	
