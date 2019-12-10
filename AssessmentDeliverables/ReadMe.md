@@ -98,5 +98,7 @@ topic : Stock Market Charting(FSD)v3.0
 
 ==============================================================================================
 
-FSD SMC (Stock Market Charting) System operation description
+FSD SMC (Stock Market Charting) System Operation Guide
+
+giturl:https://github.com/xinlhe/FSD_SBA_SERVICES/blob/master/AssessmentDeliverables/FSD%20SMC(StockMarketCharting)%20Operation%20Guide.docx
 
