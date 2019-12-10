@@ -94,3 +94,9 @@ topic : Stock Market Charting(FSD)v3.0
 	MicroServices git url : https://github.com/xinlhe/FSD_SBA_SERVICES/
 	
 	Front End git url : https://github.com/xinlhe/FSD_SBA_UI
+	
+
+==============================================================================================
+
+FSD SMC (Stock Market Charting) System operation description
+
